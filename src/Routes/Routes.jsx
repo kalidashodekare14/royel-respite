@@ -4,6 +4,7 @@ import Home from "../Pages/Home/Home";
 import AboutUs from "../Pages/AboutUs/AboutUs.jsx";
 import Gellary from "../Pages/Gellary/Gellary.jsx";
 import Contact from "../Pages/Contact/Contact.jsx";
+import Details from "../Pages/Details/Details.jsx";
 
 
 const router = createBrowserRouter([
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                loader: () => fetch('data.json')
+                loader: () => fetch('../data.json')
             },
             {
                 path: '/about_us',
@@ -28,6 +29,11 @@ const router = createBrowserRouter([
                 path: '/contact',
                 element: <Contact></Contact>
             },
+            {
+                path: '/details/:id',
+                element: <Details></Details>,
+                loader: () => fetch('../data.json')
+            }
 
 
         ]

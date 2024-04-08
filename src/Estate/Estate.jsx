@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Estate = ({ userData }) => {
 
-    const { image_url, estate_title, segment_name, price, status, area, location, facilities, description } = userData
+    const { id, image_url, estate_title, segment_name, status, location } = userData
 
     return (
         <div>
@@ -18,7 +19,9 @@ const Estate = ({ userData }) => {
                     </div>
                     <h4 className='text-[17px] font-semibold text-[#000000c4]'>Location: {location}</h4>
                     <div className="card-actions ">
-                        <button className="btn btn-primary">View Property</button>
+                        <Link to={`/details/${id}`}>
+                            <button className="btn btn-primary">View Property</button>
+                        </Link>
                     </div>
                 </div>
             </div>
