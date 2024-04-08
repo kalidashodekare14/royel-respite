@@ -1,0 +1,215 @@
+[
+    {
+      "id": "SFH001",
+      "estate_title": "Spacious Family Home in Suburban Neighborhood",
+      "segment_name": "Single-family Homes",
+      "description": "Beautiful single-family home located in a quiet suburban area, perfect for families.",
+      "price": "$400,000",
+      "status": "rent",
+      "area": "2500 sqft",
+      "location": "47 W 13th St, New York, NY 10011, USA",
+      "facilities": [
+        "3 bedrooms",
+        "2 bathrooms",
+        "Backyard",
+        "Garage"
+      ],
+      "image_url": "https://i.ibb.co/Ttt3xYY/276e8098dedd7cd55c83348aa40500bcl-m3019715230od-w1024-h768-x2.webp",
+      "view_property_url": "https://example.com/view_property/SFH001"
+    },
+    {
+      "id": "SFH002",
+      "estate_title": "Luxurious Estate with Panoramic Views",
+      "segment_name": "Single-family Homes",
+      "description": "Elegant single-family home offering luxury amenities and breathtaking views.",
+      "price": "$1,200,000",
+      "status": "rent",
+      "area": "4000 sqft",
+      "location": "181 Mercer Street, New York, NY 10012, United States",
+      "facilities": [
+        "5 bedrooms",
+        "4 bathrooms",
+        "Swimming pool",
+        "Home theater"
+      ],
+      "image_url": "https://i.ibb.co/MDZpy0C/37ee4f221856af06339c26980864ca7dl-m862329990od-w1024-h768-x2.webp",
+      "view_property_url": "https://example.com/view_property/SFH002"
+    },
+    {
+      "id": "TH001",
+      "estate_title": "Modern Townhouse in City Center",
+      "segment_name": "Townhouses",
+      "description": "Contemporary townhouse located in the heart of the city, offering urban convenience.",
+      "price": "$600,000",
+      "status": "rent",
+      "area": "1800 sqft",
+      "location": "242 Greene St, New York, NY 10003, USA",
+      "facilities": [
+        "2 bedrooms",
+        "2.5 bathrooms",
+        "Rooftop terrace",
+        "Fitness center"
+      ],
+      "image_url": "https://photos.zillowstatic.com/fp/cea0f427a8c6806bfcfe3a77d8d2a80b-p_e.jpg",
+      "view_property_url": "https://example.com/view_property/TH001"
+    },
+    {
+      "id": "TH002",
+      "estate_title": "Charming Townhouse with Garden",
+      "segment_name": "Townhouses",
+      "description": "Lovely townhouse featuring a private garden and cozy living spaces, ideal for relaxation.",
+      "price": "$450,000",
+      "status": "rent",
+      "area": "1600 sqft",
+      "location": "345 E 24th St, New York, NY 10010, USA",
+      "facilities": [
+        "3 bedrooms",
+        "2 bathrooms",
+        "Private garden",
+        "Community pool"
+      ],
+      "image_url": "https://images1.apartments.com/i2/9UMLvmvYMMlxJR4Ym_m3fcvI3N4TelPpXaWC50gXh5w/117/2323-putters-way-raleigh-nc-building-photo.jpg",
+      "view_property_url": "https://example.com/view_property/TH002"
+    },
+    {
+      "id": "APT001",
+      "estate_title": "Modern Downtown Apartment",
+      "segment_name": "Apartments",
+      "description": "Sleek and stylish apartment located in the vibrant downtown area, offering urban living at its finest.",
+      "price": "$2,500/month",
+      "status": "rent",
+      "area": "1000 sqft",
+      "location": "110 W 3rd St, New York, NY 10012, USA",
+      "facilities": [
+        "1 bedroom",
+        "1 bathroom",
+        "Open-concept living space",
+        "Balcony"
+      ],
+      "image_url": "https://images1.apartments.com/i2/FS-BaqSrHXnynHcR_8Y6H2WdqKk-qyAv6fiQ7mM7JVE/117/sofia-santa-clara-ca-building-photo.jpg",
+      "view_property_url": "https://example.com/view_property/APT001"
+    },
+    {
+      "id": "APT002",
+      "estate_title": "Luxury High-rise Apartment",
+      "segment_name": "Apartments",
+      "description": "Luxurious high-rise apartment with stunning city views and top-of-the-line amenities.",
+      "price": "$3,500/month",
+      "status": "rent",
+      "area": "1500 sqft",
+      "location": "120 E 12th St, New York, NY 10003, USA",
+      "facilities": [
+        "2 bedrooms",
+        "2 bathrooms",
+        "Floor-to-ceiling windows",
+        "Fitness center"
+      ],
+      "image_url": "https://images1.apartments.com/i2/DP-ozPYkWBcnFP2pHDsl8tIfdLo4vEFOsb_TXgv2IiQ/117/image.jpg",
+      "view_property_url": "https://example.com/view_property/APT002"
+    },
+    {
+      "id": "STU001",
+      "estate_title": "Cozy Student Apartment Near Campus",
+      "segment_name": "Student Housing",
+      "description": "Comfortable student apartment conveniently located within walking distance to campus.",
+      "price": "$800/month",
+      "status": "rent",
+      "area": "600 sqft",
+      "location": "249 Sullivan St, New York, NY 10012, USA",
+      "facilities": [
+        "Studio layout",
+        "Kitchenette",
+        "Study area"
+      ],
+      "image_url": "https://images1.apartments.com/i2/KabJBv7mGvYgqxeB0euBOBRyYBxXymTmjXL3AYSd42Q/117/image.jpg",
+      "view_property_url": "https://example.com/view_property/STU001"
+    },
+    {
+      "id": "STU002",
+      "estate_title": "Shared Student House with Amenities",
+      "segment_name": "Student Housing",
+      "description": "Spacious student house with shared amenities, ideal for students seeking a community atmosphere.",
+      "price": "$600/month (per room)",
+      "status": "rent",
+      "area": "2000 sqft",
+      "location": "636 Greenwich St, New York, NY 10014, USA",
+      "facilities": [
+        "4 bedrooms",
+        "2 bathrooms",
+        "Shared living space",
+        "Laundry facilities"
+      ],
+      "image_url": "https://rebusinessonline.com/wp-content/uploads/2023/09/The-Campbell.jpg",
+      "view_property_url": "https://example.com/view_property/STU002"
+    },
+    {
+      "id": "SLC001",
+      "estate_title": "Retirement Village Apartment",
+      "segment_name": "Senior Living Communities",
+      "description": "Comfortable apartment within a retirement village, offering independent living and a supportive community.",
+      "price": "$3,000/month",
+      "status": "rent",
+      "area": "800 sqft",
+      "location": "140 E 14th St, New York, NY 10003, USA",
+      "facilities": [
+        "1 bedroom",
+        "1 bathroom",
+        "Community dining",
+        "Fitness center"
+      ],
+      "image_url": "https://rentpath-res.cloudinary.com/$img_current/t_3x2_webp_lg/00cda6c47bd72f28d427bb726f58303f",
+      "view_property_url": "https://example.com/view_property/SLC001"
+    },
+    {
+      "id": "SLC002",
+      "estate_title": "Assisted Living Facility Suite",
+      "segment_name": "Senior Living Communities",
+      "description": "Spacious suite within an assisted living facility, offering personalized care and a comfortable living environment.",
+      "price": "$5,000/month",
+      "status": "rent",
+      "area": "1000 sqft",
+      "location": "433 1st Ave, New York, NY 10010, USA",
+      "facilities": [
+        "1 bedroom",
+        "1 bathroom",
+        "24-hour care",
+        "Medical assistance"
+      ],
+      "image_url": "https://images1.apartments.com/i2/Xy_Sv287DFCsKQ7v6x62Utzqx5pO3_0zSbL8fesILDA/117/image.jpg",
+      "view_property_url": "https://example.com/view_property/SLC002"
+    },
+    {
+      "id": "VR001",
+      "estate_title": "Beachfront Villa Retreat",
+      "segment_name": "Vacation Rentals",
+      "description": "Escape to this luxurious beachfront villa offering relaxation and stunning ocean views.",
+      "price": "$500/night",
+      "status": "rent",
+      "area": "3000 sqft",
+      "location": "50 W 4th St, New York, NY 10012, USA",
+      "facilities": [
+        "Private pool",
+        "Ocean views",
+        "Outdoor dining area"
+      ],
+      "image_url": "https://www.annamaria.com/wp-content/uploads/2016/02/the-big-yellow-house.jpg",
+      "view_property_url": "https://example.com/view_property/VR001"
+    },
+    {
+      "id": "VR002",
+      "estate_title": "Mountain Cabin Getaway",
+      "segment_name": "Vacation Rentals",
+      "description": "Cozy mountain cabin nestled in the woods, offering tranquility and nature's beauty.",
+      "price": "$300/night",
+      "status": "rent",
+      "area": "1200 sqft",
+      "location": "35 W 4th St, New York, NY 10012, USA",
+      "facilities": [
+        "Wood-burning fireplace",
+        "Scenic views",
+        "Hiking trails nearby"
+      ],
+      "image_url": "https://www.vrbo.com/vacation-ideas/wp-content/uploads/2023/06/vacation-rentals.jpg",
+      "view_property_url": "https://example.com/view_property/VR002"
+    }
+]

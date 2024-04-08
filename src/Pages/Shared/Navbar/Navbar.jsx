@@ -4,14 +4,14 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
 
     const links = <>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/residential">Residential</NavLink></li>
-        <li><NavLink to="/about_us">About Us</NavLink></li>
-        <li><NavLink to="/contact-us">Contact</NavLink></li>
+        <li className='text-[16px]'><NavLink to="/">Home</NavLink></li>
+        <li className='text-[16px]'><NavLink to="/about_us">About Us</NavLink></li>
+        <li className='text-[16px]'><NavLink to="/gellary">Gellery</NavLink></li>
+        <li className='text-[16px]'><NavLink to="/contact">Contact</NavLink></li>
     </>
 
     return (
-        <div className="navbar bg-base-100 sticky">
+        <div className="navbar sticky text-white">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
