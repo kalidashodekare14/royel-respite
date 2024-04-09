@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLoaderData, useParams } from 'react-router-dom'
+import { Link, useLoaderData, useParams } from 'react-router-dom'
 import img from '../../assets/img.jpg'
 
 const Details = () => {
@@ -36,12 +36,14 @@ const Details = () => {
                     </div>
                 </div>
                 <div>
-                   
+
                     <p className='text-[19px]'><span className='text-2xl'>Description:</span> {check.description}</p>
                 </div>
-                <button className='btn'>Back</button>
+                <Link to="/">
+                    <button className='btn'>Back</button>
+                </Link>
             </div>
-           
+
         </div>
     );
 };
