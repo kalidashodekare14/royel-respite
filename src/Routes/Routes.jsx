@@ -7,12 +7,16 @@ import Contact from "../Pages/Contact/Contact.jsx";
 import Details from "../Pages/Details/Details.jsx";
 import Login from "../Pages/Login/Login.jsx";
 import SingUp from "../Pages/SingUp/SingUp.jsx";
+import PrivateRoutes from "../PrivateRoutes/PrivateRoutes.jsx";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage.jsx";
+import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile.jsx";
 
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Root></Root>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',
@@ -32,8 +36,12 @@ const router = createBrowserRouter([
                 element: <Contact></Contact>
             },
             {
+                path: 'update_profile',
+                element: <UpdateProfile></UpdateProfile>
+            },
+            {
                 path: '/details/:id',
-                element: <Details></Details>,
+                element: <PrivateRoutes> <Details></Details> </PrivateRoutes>,
                 loader: () => fetch('../data.json')
             },
             {

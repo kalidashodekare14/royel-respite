@@ -2,11 +2,17 @@ import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
+import { useLocation } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import { FaGoogle } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 const Login = () => {
 
-    const { loginUser } = useContext(AuthContext)
+    const { loginUser, googleSingIn } = useContext(AuthContext)
     const [error, setError] = useState('')
+    const location = useLocation()
+    const navigate = useNavigate()
 
     const {
         register,
@@ -20,12 +26,16 @@ const Login = () => {
         loginUser(email, password)
             .then(result => {
                 console.log(result.user)
+                navigate(location?.state ? location.state : '/')
             })
             .catch(error => {
                 console.log(error.message)
                 setError('Your email is not registered, please register')
             })
     }
+
+
+    
 
     return (
         <div className="card border m-auto mt-10 shadow-lg lg:w-1/3 flex min-h-[50vh] flex-1 flex-col justify-center items-center px-6  lg:px-8">
@@ -63,7 +73,7 @@ const Login = () => {
                         <div className="mt-2">
                             <input type='password' {...register("password",
                                 { required: true },
-                                
+
                             )} className="block w-full  input  text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                             />
                             {errors.password && <span className='text-red-500'>This field is required</span>}
@@ -81,8 +91,9 @@ const Login = () => {
                             error && <span className='text-red-500'>{error}</span>
                         }
                     </div>
-                </form>
 
+                </form>
+                
                 <p className="mt-5 mb-5 text-center text-sm text-gray-500">
                     Don't have an account? {' '}
                     <a href="#" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
