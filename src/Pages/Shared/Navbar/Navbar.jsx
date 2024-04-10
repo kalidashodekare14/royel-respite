@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../../../AuthProvider/AuthProvider';
+import img from '../../../assets/img.jpg'
 
 const Navbar = () => {
 
@@ -17,17 +18,17 @@ const Navbar = () => {
 
     const handleSignOut = () => {
         useSignOut()
-        .then(result =>{
-            console.log(result.user)
+            .then(result => {
+                console.log(result.user)
 
-        })
-        .catch(error =>{
-            console.log(error.message)
-        })
+            })
+            .catch(error => {
+                console.log(error.message)
+            })
     }
 
     return (
-        <div className="navbar sticky text-white">
+        <div className=" bg-[#2a9d8f] to-0 navbar z-10 text-white">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -46,10 +47,17 @@ const Navbar = () => {
             </div>
             <div className="navbar-end">
                 {
-                    user ? <div>
-                        {user.email}
+                    user ? <div className='flex items-center'>
+                        <div className="dropdown dropdown-bottom">
+                            <div tabIndex={0} role="button" className=" m-1">
+                               <img className='w-[70%] h-[10vh] rounded-full shadow-black' src={img} alt="" />
+                            </div>
+                            <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a>Item 1</a></li>
+                                <li><a>Item 2</a></li>
+                            </ul>
+                        </div>
                         <button onClick={handleSignOut} className="btn bg-[#0077b6] text-white">Log Out</button>
-
                     </div>
                         :
                         <Link to="/signin">

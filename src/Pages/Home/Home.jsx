@@ -10,7 +10,7 @@ const Home = () => {
 
     return (
         <div className="relative">
-            <div className="absolute z-10  lg:left-[30%] bg-[#000000a4] rounded lg:w-[40%] p-5 text-center space-y-3">
+            <div className="absolute z-10 top-52  lg:left-[30%] bg-[#000000a4] rounded lg:w-[40%] p-5 text-center space-y-3">
                 <h1 className="text-5xl text-white">Urban Oasis Awaits</h1>
                 <p className="text-[#fca311] tracking-[.25em]">Ultimate Destination for Exceptional Residential Experiences.</p>
             </div>

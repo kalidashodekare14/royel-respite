@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
 import { useLocation } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
-import { FaGoogle } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import google from '../../assets/google.png'
+import github from '../../assets/github.png'
 
 const Login = () => {
 
-    const { loginUser, googleSingIn } = useContext(AuthContext)
+    const { loginUser, googleSingIn, gitHubSingIn } = useContext(AuthContext)
     const [error, setError] = useState('')
     const location = useLocation()
     const navigate = useNavigate()
@@ -34,6 +34,25 @@ const Login = () => {
             })
     }
 
+    const handleGoogleSingIn = () =>{
+        googleSingIn()
+        .then(result =>{
+            console.log(result.user)
+        })
+        .catch(error =>{
+            console.log(error.message)
+        })
+    }
+
+    const handleGitHubSingIn = () =>{
+        gitHubSingIn()
+        .then(result =>{
+            console.log(result.user)
+        })
+        .then(error =>{
+            console.log(error.message)
+        })
+    }
 
     
 
@@ -91,7 +110,14 @@ const Login = () => {
                             error && <span className='text-red-500'>{error}</span>
                         }
                     </div>
-
+                    <div className='flex space-x-20 justify-center items-center'>
+                        <span onClick={handleGoogleSingIn} className='btn'>
+                            <img className='w-8' src={google} alt="" />
+                        </span>
+                        <span onClick={handleGitHubSingIn} className='btn'>
+                            <img className='w-8' src={github} alt="" />
+                        </span>
+                    </div>
                 </form>
                 
                 <p className="mt-5 mb-5 text-center text-sm text-gray-500">
