@@ -50,7 +50,7 @@ const SingUp = () => {
         <div className="card border m-auto mt-10 shadow-lg lg:w-1/3 flex min-h-[50vh] flex-1 flex-col justify-center items-center px-6  lg:px-8">
             <div className="sm:mx-auto sm:w-full sm:max-w-sm">
 
-                <h2 className="mt-5 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
+                <h2 className="font-roboto mt-5 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
                     Sing Up to your account
                 </h2>
             </div>
@@ -58,7 +58,7 @@ const SingUp = () => {
             <div className="mt-5 sm:mx-auto sm:w-full sm:max-w-sm">
                 <form onSubmit={handleRegister}  className="space-y-3" action="#" method="POST">
                     <div>
-                        <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+                        <label htmlFor="email" className="block font-roboto text-sm font-medium leading-6 text-gray-900">
                             Full Name
                         </label>
                         <div className="mt-2">
@@ -68,7 +68,7 @@ const SingUp = () => {
                         </div>
                     </div>
                     <div>
-                        <label htmlFor="email"  className="block text-sm font-medium leading-6 text-gray-900">
+                        <label htmlFor="email"  className="block font-roboto text-sm font-medium leading-6 text-gray-900">
                             Email address
                         </label>
                         <div className="mt-2">
@@ -77,7 +77,7 @@ const SingUp = () => {
                         </div>
                     </div>
                     <div>
-                        <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+                        <label htmlFor="email" className="block font-roboto text-sm font-medium leading-6 text-gray-900">
                             photo URL
                         </label>
                         <div className="mt-2">
@@ -88,7 +88,7 @@ const SingUp = () => {
 
                     <div>
                         <div className="flex items-center justify-between">
-                            <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
+                            <label htmlFor="password" className="block font-roboto text-sm font-medium leading-6 text-gray-900">
                                 Password
                             </label>
 
@@ -111,7 +111,7 @@ const SingUp = () => {
                     <div>
                         <button
                             type="submit"
-                            className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                            className="flex font-roboto w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                         >
                             Sing Up
                         </button>
@@ -119,7 +119,7 @@ const SingUp = () => {
                     </div>
                 </form>
 
-                <p className="mt-4 mb-5 text-center text-sm text-gray-500">
+                <p className="mt-4 font-roboto mb-5 text-center text-sm text-gray-500">
                     Already have an account? {' '}
                     <a href="#" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
                         <Link to="/signin">

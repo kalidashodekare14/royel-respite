@@ -29,24 +29,14 @@ const Login = () => {
             })
     }
 
-    const handleGoogleSingIn = () => {
-        const email = e.target.email.value
-        const password = e.target.password.value
-        consle.log(email, password)
-        googleSingIn(email, password)
-            .then(result => {
-                console.log(result.user)
-            })
-            .catch(error => {
-                console.log(error.message)
-            })
-    }
+    
 
 
     const handleGoogleLogin = () => {
         googleSingIn()
         .then(result =>{
             consle.log(result.user)
+            navigate(location?.state ? location.state : '/')
         })
         .catch(error =>{
             consle.log(error.message)
@@ -58,6 +48,7 @@ const Login = () => {
         gitHubSingIn()
             .then(result => {
                 console.log(result.user)
+                navigate(location?.state ? location.state : '/')
             })
             .then(error => {
                 console.log(error.message)

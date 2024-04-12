@@ -1,14 +1,14 @@
 import { Outlet } from 'react-router-dom'
 import Navbar from '../../Pages/Shared/Navbar/Navbar';
+import Footer from '../../Pages/Shared/Footer/Footer';
 const Root = () => {
     return (
         <div className=''>
-            <div className=' bg-[#2a9d8f]'>
-                <div className='mx-20'>
-                    <Navbar></Navbar>
-                </div>
+            <div className='lg:mx-20'>
+                <Navbar></Navbar>
             </div>
-            <Outlet></Outlet>
+                <Outlet></Outlet>
+            <Footer></Footer>
         </div>
     );
 };

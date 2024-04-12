@@ -6,7 +6,13 @@ export default {
   ],
   theme: {
     extend: {
-
+      fontFamily: {
+        popins: "'Roboto', sans-serif"
+      },
+      backgroundImage: {
+       
+      }
+      
     },
   },
   plugins: [require("daisyui")],

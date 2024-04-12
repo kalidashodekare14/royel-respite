@@ -25,7 +25,7 @@
       "price": "$1,200,000",
       "status": "rent",
       "area": "4000 sqft",
-      "location": "181 Mercer Street, New York, NY 10012, United States",
+      "location": "371 7th Ave, New York, NY 10001",
       "facilities": [
         "5 bedrooms",
         "4 bathrooms",
@@ -41,7 +41,7 @@
       "segment_name": "Townhouses",
       "description": "Contemporary townhouse located in the heart of the city, offering urban convenience.",
       "price": "$600,000",
-      "status": "rent",
+      "status": "sale",
       "area": "1800 sqft",
       "location": "242 Greene St, New York, NY 10003, USA",
       "facilities": [
@@ -95,7 +95,7 @@
       "segment_name": "Apartments",
       "description": "Luxurious high-rise apartment with stunning city views and top-of-the-line amenities.",
       "price": "$3,500/month",
-      "status": "rent",
+      "status": "sale",
       "area": "1500 sqft",
       "location": "120 E 12th St, New York, NY 10003, USA",
       "facilities": [
@@ -113,7 +113,7 @@
       "segment_name": "Student Housing",
       "description": "Comfortable student apartment conveniently located within walking distance to campus.",
       "price": "$800/month",
-      "status": "rent",
+      "status": "sale",
       "area": "600 sqft",
       "location": "249 Sullivan St, New York, NY 10012, USA",
       "facilities": [
@@ -166,7 +166,7 @@
       "segment_name": "Senior Living Communities",
       "description": "Spacious suite within an assisted living facility, offering personalized care and a comfortable living environment.",
       "price": "$5,000/month",
-      "status": "rent",
+      "status": "sale",
       "area": "1000 sqft",
       "location": "433 1st Ave, New York, NY 10010, USA",
       "facilities": [

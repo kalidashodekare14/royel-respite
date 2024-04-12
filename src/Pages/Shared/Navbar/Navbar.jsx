@@ -8,11 +8,11 @@ const Navbar = () => {
     console.log(user)
 
     const links = <>
-        <li className='text-[16px]'><NavLink to="/">Home</NavLink></li>
-        <li className='text-[16px]'><NavLink to="/about_us">About Us</NavLink></li>
-        <li className='text-[16px]'><NavLink to="/contact">Contact</NavLink></li>
-        <li className={`${user ? 'visible' : 'hidden'} text-[16px]`}><NavLink to="/update_profile">Update Profile</NavLink></li>
-        <li className={`${user ? 'visible' : 'hidden'} text-[16px]`}><NavLink to="/user_profile">User Profile</NavLink></li>
+        <li className='text-[16px] text-black'><NavLink to="/">Home</NavLink></li>
+        <li className='text-[16px] text-black'><NavLink to="/about_us">About Us</NavLink></li>
+        <li className='text-[16px] text-black'><NavLink to="/contact">Contact</NavLink></li>
+        <li className={`${user ? 'visible' : 'hidden'} text-black text-[16px]`}><NavLink to="/update_profile">Update Profile</NavLink></li>
+        <li className={`${user ? 'visible' : 'hidden'} text-black text-[16px]`}><NavLink to="/user_profile">User Profile</NavLink></li>
     </>
 
     const handleSignOut = () => {
@@ -27,7 +27,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className=" bg-[#2a9d8f] navbar text-white">
+        <div className=" bg-base-100  navbar text-white">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -37,7 +37,7 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">Royal Respite</a>
+                <a className="btn btn-ghost text-xl text-black">Royal Respite</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -54,7 +54,7 @@ const Navbar = () => {
                     </div>
                         :
                         <Link to="/signin">
-                            <button className="btn bg-[#0077b6] text-white">Sign in</button>
+                            <button className="btn bg-[#57cc99] text-white">Sign in</button>
                         </Link>
 
                 }
