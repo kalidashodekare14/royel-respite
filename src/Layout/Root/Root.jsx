@@ -2,9 +2,9 @@ import { Outlet } from 'react-router-dom'
 import Navbar from '../../Pages/Shared/Navbar/Navbar';
 const Root = () => {
     return (
-        <div className='relative'>
-            <div className='bg-[#0077b6]'>
-                <div >
+        <div className=''>
+            <div className=' bg-[#2a9d8f]'>
+                <div className='mx-20'>
                     <Navbar></Navbar>
                 </div>
             </div>

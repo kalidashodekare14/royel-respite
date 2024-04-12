@@ -10,6 +10,7 @@ import SingUp from "../Pages/SingUp/SingUp.jsx";
 import PrivateRoutes from "../PrivateRoutes/PrivateRoutes.jsx";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage.jsx";
 import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile.jsx";
+import UserProfile from "../Pages/UserProfile/UserProfile.jsx";
 
 
 const router = createBrowserRouter([
@@ -28,16 +29,16 @@ const router = createBrowserRouter([
                 element: <AboutUs></AboutUs>
             },
             {
-                path: '/gellary',
-                element: <Gellary></Gellary>
-            },
-            {
                 path: '/contact',
                 element: <Contact></Contact>
             },
             {
-                path: 'update_profile',
-                element: <UpdateProfile></UpdateProfile>
+                path: '/update_profile',
+                element: <PrivateRoutes><UpdateProfile></UpdateProfile></PrivateRoutes>
+            },
+            {
+                path: '/user_profile',
+                element: <PrivateRoutes><UserProfile></UserProfile></PrivateRoutes>
             },
             {
                 path: '/details/:id',

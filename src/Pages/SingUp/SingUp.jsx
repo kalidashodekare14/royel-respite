@@ -1,5 +1,4 @@
 import React, { useContext, useState } from 'react';
-import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
 import { FaEye } from "react-icons/fa";
@@ -9,44 +8,43 @@ const SingUp = () => {
 
     const { registerUser } = useContext(AuthContext)
     const [passwordShow, setPasswordShow] = useState(true)
-    const [passwordError, setPasswordError] = useState('')
-    const [success, setSuccess] = useState('')
-    const [error, setError] = useState('')
+    const [passwordError,  setPasswordError] = useState('')
+    
 
-    const {
-        register,
-        handleSubmit,
-        formState: { errors },
-    } = useForm()
+    const handleRegister = e =>{
+        e.preventDefault()
+        const name = e.target.name.value
+        const email = e.target.email.value
+        const photoUrl = e.target.photo.value
+        const password = e.target.password.value
+        // console.log(name, email, photoUrl, password)
 
-    const onSubmit = (data) => {
-        // console.log(data.email)
-        const { email, password } = data
+        setPasswordError('')   
 
-        setPasswordError('')
-        setSuccess('')
-        setError('')
-
-        if(!/[A-Z]/.test(password)){
-            setPasswordError('Your password should  have at least one uppercase characters.')
-            return
+        if(password.length < 6){
+           return setPasswordError('Password must be 6 Character')
         }
         else if(!/[a-z]/.test(password)){
-            setPasswordError('Lowercase letters are required')
-            return
+            return setPasswordError('Must be lowercase Character')
+        }
+        else if(!/[A-Z]/.test(password)){
+            return setPasswordError('Any single character must be uppercase')
         }
 
-
         registerUser(email, password)
-            .then(result => {
-                console.log(result.user)
-                setSuccess('Your Sing Up Successfully')
-            })
-            .catch(error => {
-                console.log(error.message)
-                setError('Your Email Already Used')
-            })
+        .then(result =>{
+            console.log(result.user)
+        })
+        .catch(error =>{
+            console.log(error.message)
+        })
+
+
     }
+   
+   
+
+   
 
     return (
         <div className="card border m-auto mt-10 shadow-lg lg:w-1/3 flex min-h-[50vh] flex-1 flex-col justify-center items-center px-6  lg:px-8">
@@ -58,39 +56,24 @@ const SingUp = () => {
             </div>
 
             <div className="mt-5 sm:mx-auto sm:w-full sm:max-w-sm">
-                <form onSubmit={handleSubmit(onSubmit)} className="space-y-3" action="#" method="POST">
+                <form onSubmit={handleRegister}  className="space-y-3" action="#" method="POST">
                     <div>
                         <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
                             Full Name
                         </label>
                         <div className="mt-2">
-                            <input type='text' {...register("fullName", {
-                                required: {
-                                    value: true,
-                                    message: 'You must fill the input'
-                                }
-                            })} className="input input-bordered w-full"
+                            <input name='name' type='text' required className="input input-bordered w-full"
                             />
-                            {errors.fullName && <span className='text-red-500'>{errors.fullName.message}</span>}
+                            
                         </div>
                     </div>
                     <div>
-                        <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+                        <label htmlFor="email"  className="block text-sm font-medium leading-6 text-gray-900">
                             Email address
                         </label>
                         <div className="mt-2">
-                            <input type='email' {...register("email", {
-                                required: true,
-                                required: {
-                                    value: true,
-                                    message: 'Your must fill the input'
-                                },
-
-                            },
-
-                            )} className="input input-bordered w-full"
+                            <input name='email' type='email' required  className="input input-bordered w-full"
                             />
-                            {errors.email && <span className='text-red-500'>{errors.email.message}</span>}
                         </div>
                     </div>
                     <div>
@@ -98,14 +81,8 @@ const SingUp = () => {
                             photo URL
                         </label>
                         <div className="mt-2">
-                            <input type='photo' {...register("photoUrl", {
-                                required: {
-                                    value: true,
-                                    message: 'You must fill the input'
-                                }
-                            })} className="input input-bordered w-full"
+                            <input name='photo' type='photo' required className="input input-bordered w-full"
                             />
-                            {errors.photoUrl && <span className='text-red-500'>{errors.photoUrl.message}</span>}
                         </div>
                     </div>
 
@@ -118,26 +95,15 @@ const SingUp = () => {
                         </div>
                         <div className="mt-2">
                             <div className='flex items-center input-bordered border rounded-xl px-2'>
-                                <input type={passwordShow ? 'password' : 'text'}
-                                    {...register("password", {
-                                        required: {
-                                            value: true,
-                                            message: 'You must fill the input'
-                                        },
-                                        minLength: {
-                                            value: 6,
-                                            message: 'Must be at least 6 character'
-                                        },
-                                        
-                                    })} className="input  w-full"
+                                <input name='password' required type={passwordShow ? 'password' : 'text'}
+                                    className="input  w-full"
                                 />
                                 <div onClick={() => setPasswordShow(!passwordShow)} >
                                     <FaEye className='text-[16px]' />
                                 </div>
                             </div>
-                            {errors.password && <span className='text-red-500'>{errors.password.message}</span>}
                             {
-                             passwordError && <span className='text-red-500'>{passwordError}</span>
+                                passwordError && <span className='text-red-500'>{passwordError}</span>
                             }
                         </div>
                     </div>
@@ -149,12 +115,7 @@ const SingUp = () => {
                         >
                             Sing Up
                         </button>
-                        {
-                           success && <span className='text-blue-500'>{success}</span> 
-                        }
-                        {
-                           error && <span className='text-red-500'>{error}</span> 
-                        }
+                        
                     </div>
                 </form>
 

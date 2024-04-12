@@ -23,14 +23,13 @@ const AuthProvider = ({ children }) => {
         setLoader(true)
         return signOut(auth)
     }
-    const googleSingIn = () =>{
+    const googleSingIn = () => {
         return signInWithPopup(auth, provider)
     }
-    const gitHubSingIn = () =>{
+    const gitHubSingIn = () => {
         return signInWithPopup(auth, gitProvider)
     }
     
-   
 
 
 
@@ -47,7 +46,7 @@ const AuthProvider = ({ children }) => {
     }, [])
 
 
-    const userData = { user, loader, registerUser, loginUser, useSignOut, googleSingIn, gitHubSingIn }
+    const userData = { user, loader, registerUser, loginUser, useSignOut, googleSingIn, gitHubSingIn}
     return (
         <AuthContext.Provider value={userData}>
             {children}

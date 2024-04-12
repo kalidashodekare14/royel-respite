@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../../../AuthProvider/AuthProvider';
-import img from '../../../assets/img.jpg'
 
 const Navbar = () => {
 
@@ -11,9 +10,9 @@ const Navbar = () => {
     const links = <>
         <li className='text-[16px]'><NavLink to="/">Home</NavLink></li>
         <li className='text-[16px]'><NavLink to="/about_us">About Us</NavLink></li>
-        <li className='text-[16px]'><NavLink to="/gellary">Gellery</NavLink></li>
         <li className='text-[16px]'><NavLink to="/contact">Contact</NavLink></li>
-        <li className='text-[16px]'><NavLink to="/update_profile">Update Profile</NavLink></li>
+        <li className={`${user ? 'visible' : 'hidden'} text-[16px]`}><NavLink to="/update_profile">Update Profile</NavLink></li>
+        <li className={`${user ? 'visible' : 'hidden'} text-[16px]`}><NavLink to="/user_profile">User Profile</NavLink></li>
     </>
 
     const handleSignOut = () => {
@@ -28,7 +27,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className=" bg-[#2a9d8f] to-0 navbar z-10 text-white">
+        <div className=" bg-[#2a9d8f] navbar text-white">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -47,15 +46,9 @@ const Navbar = () => {
             </div>
             <div className="navbar-end">
                 {
-                    user ? <div className='flex items-center'>
-                        <div className="dropdown dropdown-bottom">
-                            <div tabIndex={0} role="button" className=" m-1">
-                               <img className='w-[70%] h-[10vh] rounded-full shadow-black' src={img} alt="" />
-                            </div>
-                            <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                                <li><a>Item 1</a></li>
-                                <li><a>Item 2</a></li>
-                            </ul>
+                    user ? <div className='flex justify-end items-center space-x-2'>
+                        <div className="tooltip tooltip-left" data-tip={user.displayName}>
+                        <img className=' w-[100%] h-[10vh] rounded-full shadow-black' src={user.photoURL} alt="" />
                         </div>
                         <button onClick={handleSignOut} className="btn bg-[#0077b6] text-white">Log Out</button>
                     </div>
