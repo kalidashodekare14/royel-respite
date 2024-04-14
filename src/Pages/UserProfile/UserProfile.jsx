@@ -37,8 +37,8 @@ const UserProfile = () => {
                 </div>
                 <div className='flex justify-end items-center'>
                     <Link to="/update_profile">
-                        <button data-aos="zoom-in"  data-aos-delay="2500" className='btn mt-10'>
-                            <FaEdit className='text-4xl' />
+                        <button data-aos="zoom-in"  data-aos-delay="2500" className='btn mt-10 border-0 text-white bg-[#0fb45f]'>
+                            <FaEdit className='text-3xl' />
                         </button>
                     </Link>
                 </div>
