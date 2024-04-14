@@ -3,7 +3,7 @@
 }
 html,
 body {
-  /* position: relative; */
+  position: relative;
   height: 100%;
 }
 
@@ -41,11 +41,11 @@ body {
 
   
 .slider1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.345), rgba(0,0,0,0.5)), url(../../assets/slider.jpg) ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.345), rgba(0,0,0,0.5)), url(../../assets/banner1.webp) ;
 }
 .slider2{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.345), rgba(0,0,0,0.5)), url(../../assets/slider2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.345), rgba(0,0,0,0.5)), url(../../assets/banner2.jpg);
 }
 .slider3{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.345), rgba(0,0,0,0.5)), url(../../assets/slider3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.345), rgba(0,0,0,0.5)), url(../../assets/banner3.jpg);
 }

@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../../../AuthProvider/AuthProvider';
+import userNull from '../../../assets/userNull.png'
 
 const Navbar = () => {
 
@@ -27,11 +28,11 @@ const Navbar = () => {
     }
 
     return (
-        <div className=" bg-base-100  navbar text-white">
+        <div className="absolute bg-base-100  navbar text-white">
             <div className="navbar-start">
-                <div className="dropdown">
+                <div className="dropdown z-0">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                         {links}
@@ -48,7 +49,12 @@ const Navbar = () => {
                 {
                     user ? <div className='flex justify-end items-center space-x-2'>
                         <div className="tooltip tooltip-left" data-tip={user.displayName}>
-                        <img className=' w-[100%] h-[10vh] rounded-full shadow-black' src={user.photoURL} alt="" />
+                            {
+                                user.photoURL ? <div>
+                                    <img className=' lg:w-[100%] h-[10vh] rounded-full shadow-black' src={user.photoURL} alt="" />
+                                </div>
+                                : <img className=' lg:w-[100%] h-[10vh] rounded-full shadow-black' src={userNull} alt="" />
+                            }
                         </div>
                         <button onClick={handleSignOut} className="btn bg-[#0077b6] text-white">Log Out</button>
                     </div>

@@ -8,7 +8,7 @@ const Estate = ({ userData }) => {
 
     return (
         <div>
-            <div className="rounded-2xl p-3 bg-base-100 shadow-xl flex-col ">
+            <div data-aos="zoom-in" data-aos-duration="1000" className="rounded-2xl p-3 bg-base-100 shadow-xl flex-col ">
                 <figure className='relative'><img className='rounded-2xl w-full md:h-[40vh] lg:h-[40vh]' src={image_url} alt="Shoes" />
                     <span className='absolute top-2 left-2 bg-[#0000008b] px-3 py-2 text-white rounded font-roboto'>{status}</span>
                 </figure>

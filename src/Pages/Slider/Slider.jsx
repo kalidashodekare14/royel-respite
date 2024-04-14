@@ -13,7 +13,6 @@ const Slider = () => {
         <div>
             
             <Swiper
-            
                 dir="rtl"
                 navigation={true}
                 pagination={{
