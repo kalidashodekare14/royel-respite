@@ -10,11 +10,31 @@ const Navbar = () => {
     console.log(user)
 
     const links = <>
-        <li className='text-[16px] text-black'><NavLink to="/">Home</NavLink></li>
-        <li className='text-[16px] text-black'><NavLink to="/about_us">About Us</NavLink></li>
-        <li className='text-[16px] text-black'><NavLink to="/contact">Contact</NavLink></li>
-        <li className={`${user ? 'visible' : 'hidden'} text-black text-[16px]`}><NavLink to="/update_profile">Update Profile</NavLink></li>
-        <li className={`${user ? 'visible' : 'hidden'} text-black text-[16px]`}><NavLink to="/user_profile">User Profile</NavLink></li>
+        <li className='text-[16px] text-black'>
+            <NavLink className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-white active:bg-[#0fb469] focus:bg-[#0fb469] focus:text-white bg-[#0fb469]" : ""
+            } to="/">Home</NavLink>
+        </li>
+        <li className='text-[16px] text-black'>
+            <NavLink className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-white active:bg-[#0fb469] focus:bg-[#0fb469] focus:text-white bg-[#0fb469]" : ""
+            } to="/about_us">About Us</NavLink>
+        </li>
+        <li className='text-[16px] text-black'>
+            <NavLink className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-white active:bg-[#0fb469] focus:bg-[#0fb469] focus:text-white bg-[#0fb469]"  : ""
+            } to="/contact">Contact</NavLink>
+        </li>
+        <li className={`${user ? 'visible' : 'hidden'} text-black text-[16px]`}>
+            <NavLink className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-white active:bg-[#0fb469] focus:bg-[#0fb469] focus:text-white bg-[#0fb469]"  : ""
+            } to="/update_profile">Update Profile</NavLink>
+        </li>
+        <li className={`${user ? 'visible' : 'hidden'} text-black text-[16px]`}>
+            <NavLink className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-white active:bg-[#0fb469] focus:bg-[#0fb469] focus:text-white bg-[#0fb469]"  : ""
+            } to="/user_profile">User Profile</NavLink>
+        </li>
     </>
 
     const handleSignOut = () => {
@@ -56,7 +76,7 @@ const Navbar = () => {
                                 user.photoURL ? <div>
                                     <img className=' lg:w-[100%] h-[10vh] rounded-full shadow-black' src={user.photoURL} alt="" />
                                 </div>
-                                : <img className=' lg:w-[100%] h-[10vh] rounded-full shadow-black' src={userNull} alt="" />
+                                    : <img className=' lg:w-[100%] h-[10vh] rounded-full shadow-black' src={userNull} alt="" />
                             }
                         </div>
                         <button onClick={handleSignOut} className="btn bg-[#0077b6] text-white">Log Out</button>
