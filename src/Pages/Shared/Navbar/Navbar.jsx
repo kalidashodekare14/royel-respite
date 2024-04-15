@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../../../AuthProvider/AuthProvider';
 import userNull from '../../../assets/userNull.png'
+import logo from '../../../../public/logo.png'
 
 const Navbar = () => {
 
@@ -38,7 +39,9 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl text-black">Royal Respite</a>
+                <a className=" btn-ghost text-xl text-black">
+                    <img className='w-52' src={logo} alt="" />
+                </a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

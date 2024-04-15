@@ -12,6 +12,7 @@ const Login = () => {
     const location = useLocation()
     const navigate = useNavigate()
     const [error, setError] = useState('')
+   
 
 
 
@@ -26,6 +27,7 @@ const Login = () => {
             .then(result => {
                 console.log(result.user)
                 navigate(location?.state ? location.state : '/')
+                navigate('/')
             })
             .catch(error => {
                 console.log(error.message)

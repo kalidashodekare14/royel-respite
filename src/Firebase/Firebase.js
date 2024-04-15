@@ -6,12 +6,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCEMS7DGVFUbG7gMqZs2wqmqVJp1L7SSfI",
-  authDomain: "royal-respite.firebaseapp.com",
-  projectId: "royal-respite",
-  storageBucket: "royal-respite.appspot.com",
-  messagingSenderId: "975744316821",
-  appId: "1:975744316821:web:d85e64472873d1e542b29c"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID
 };
 
 // Initialize Firebase
