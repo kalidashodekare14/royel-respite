@@ -5,6 +5,7 @@ import { FaEye } from "react-icons/fa";
 import { ToastContainer, toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
+import './SingUp.css'
 
 
 const SingUp = () => {
@@ -65,7 +66,7 @@ const SingUp = () => {
 
 
     return (
-        <div className='bg-bgImage bg-no-repeat bg-center bg-cover min-h-screen  flex justify-center items-center'>
+        <div className='singUpBackground bg-no-repeat bg-center bg-cover min-h-screen  flex justify-center items-center'>
             <div data-aos="zoom-in" data-aos-duration="1000" className="lg:w-[50%] w-full px-5 border  shadow-lg bg-[#000000c5]">
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm">
 

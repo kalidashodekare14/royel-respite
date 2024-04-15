@@ -6,6 +6,9 @@ import { useNavigate } from 'react-router-dom'
 import google from '../../assets/google.png'
 import github from '../../assets/github.png'
 
+import './Login.css'
+
+
 const Login = () => {
 
     const { loginUser, googleSingIn, gitHubSingIn } = useContext(AuthContext)
@@ -64,7 +67,7 @@ const Login = () => {
 
 
     return (
-        <div className='relative bg-bgImage bg-no-repeat bg-cover bg-center min-h-screen flex justify-center items-center'>
+        <div className='relative logBackground bg-no-repeat bg-cover bg-center min-h-screen flex justify-center items-center'>
             <div data-aos="zoom-in-down" data-aos-duration="1000" className="z-0 bg-[#000000c5]  w-[50%] border shadow-lg ">
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm ">
 

@@ -10,9 +10,7 @@ export default {
         popins: "'Roboto', sans-serif",
         prompt: "'Prompt', sans-serif"
       },
-      backgroundImage: {
-        'bgImage' : "url('./loginPc.jpeg')",
-      }
+      
       
     },
   },

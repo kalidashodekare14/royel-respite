@@ -1,8 +1,28 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Royal Respite
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+## 🔗 Live Link: [Royal Respite](https://royal-respite.web.app/)
+
+
+
+## Authors
+
+- This website is made with Residential and here are some Residential hotels shown through cards.
+
+- Clicking the view property button of that card will show the complete details of that hotel.
+
+- Here is something about us.
+
+- The means to contact us are shown
+
+- If anyone logs in to the website, they can view their information and update that information. And if a user does not register then he has to register first.
+##  npm package name:
+-  [React Router](https://reactrouter.com/en/main)
+-  [Tailwindcss](https://tailwindcss.com)
+-  [Daisyui](https://daisyui.com/)
+-  [Swiperjs](https://swiperjs.com)
+-  [AOS Animation](https://michalsnik.github.io/aos)
+-  [React Leaflet](https://react-leaflet.js.org)
