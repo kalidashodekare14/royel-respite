@@ -22,19 +22,25 @@ const Navbar = () => {
         </li>
         <li className='text-[16px] text-black'>
             <NavLink className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-white active:bg-[#0fb469] focus:bg-[#0fb469] focus:text-white bg-[#0fb469]"  : ""
+                isPending ? "pending" : isActive ? "text-white active:bg-[#0fb469] focus:bg-[#0fb469] focus:text-white bg-[#0fb469]" : ""
             } to="/contact">Contact</NavLink>
         </li>
         <li className={`${user ? 'visible' : 'hidden'} text-black text-[16px]`}>
             <NavLink className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-white active:bg-[#0fb469] focus:bg-[#0fb469] focus:text-white bg-[#0fb469]"  : ""
+                isPending ? "pending" : isActive ? "text-white active:bg-[#0fb469] focus:bg-[#0fb469] focus:text-white bg-[#0fb469]" : ""
+            } to="/blog">Blog</NavLink>
+        </li>
+        <li className={`${user ? 'visible' : 'hidden'} text-black text-[16px]`}>
+            <NavLink className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-white active:bg-[#0fb469] focus:bg-[#0fb469] focus:text-white bg-[#0fb469]" : ""
             } to="/update_profile">Update Profile</NavLink>
         </li>
         <li className={`${user ? 'visible' : 'hidden'} text-black text-[16px]`}>
             <NavLink className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-white active:bg-[#0fb469] focus:bg-[#0fb469] focus:text-white bg-[#0fb469]"  : ""
+                isPending ? "pending" : isActive ? "text-white active:bg-[#0fb469] focus:bg-[#0fb469] focus:text-white bg-[#0fb469]" : ""
             } to="/user_profile">User Profile</NavLink>
         </li>
+
     </>
 
     const handleSignOut = () => {
@@ -73,7 +79,7 @@ const Navbar = () => {
                     user ? <div className='flex justify-end items-center space-x-2'>
                         <div className="tooltip tooltip-left" data-tip={user.displayName}>
                             {
-                                user.photoURL ? <div>
+                                user.photoURL ? <div className='border-[3px] border-[#0fb469] rounded-full '>
                                     <img className=' lg:w-[100%] h-[10vh] rounded-full shadow-black' src={user.photoURL} alt="" />
                                 </div>
                                     : <img className=' lg:w-[100%] h-[10vh] rounded-full shadow-black' src={userNull} alt="" />

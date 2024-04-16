@@ -12,7 +12,7 @@ import { MdEmail } from "react-icons/md";
 const Contact = () => {
     return (
         <div>
-            <div className='contactBackground bg-no-repeat bg-cover bg-center h-[40vh] flex flex-col justify-center items-center '>
+            <div className='contactBackground bg-no-repeat bg-cover bg-center h-[70vh] flex flex-col justify-center items-center '>
                 <h1 data-aos="fade-down" data-aos-duration="1000" className='text-6xl text-white font-popins'>Contact</h1>
             </div>
             <div data-aos="zoom-in" data-aos-delay="1000" className='lg:mx-20  mx-5 lg:m-10 my-10'>

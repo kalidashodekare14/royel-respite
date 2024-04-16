@@ -6,13 +6,15 @@ import './UpdateProfile.css'
 
 const UpdateProfile = () => {
 
-    const { user, updateProfileChange } = useContext(AuthContext)
+    const { user, updateProfileChange, updateEmailAuth } = useContext(AuthContext)
 
     const handleUpdateProfile = e => {
         e.preventDefault()
         const name = e.target.name.value
         const photoUrl = e.target.photoUrl.value
+        const email = e.target.email.value
         updateProfileChange(name, photoUrl)
+        updateEmailAuth(email)
 
     }
 
@@ -28,10 +30,13 @@ const UpdateProfile = () => {
                         <p data-aos="fade-left" data-aos-delay="2200" className='text-[18px] text-white'>Name: {user.displayName}</p>
                         <input data-aos="fade-right" data-aos-delay="2300" className='input input-bordered w-full' name='name' type="name" />
                         <br />
+                        <p data-aos="fade-right" data-aos-delay="2400" className='text-[18px] text-white'>Email: {user.email}</p>
+                        <input data-aos="fade-left" data-aos-delay="2500" className='input input-bordered w-full' type="text" name='email' />
+                        <br />
                         <p data-aos="fade-right" data-aos-delay="2400" className='text-[18px] text-white'>Enter Your Photo Url</p>
                         <input data-aos="fade-left" data-aos-delay="2500" className='input input-bordered w-full' type="text" name='photoUrl' />
                         <br />
-                        <div data-aos="zoom-in"  data-aos-delay="2600">
+                        <div data-aos="zoom-in" data-aos-delay="2600">
 
                             <input className='btn bg-[#0fb45f] text-white border-0' type="Submit" />
                         </div>

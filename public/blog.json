@@ -1,0 +1,92 @@
+[
+  {
+    "admin": "Admin",
+    "date": "2023-01-10",
+    "comments": 4,
+    "title": "January Hotel Sales: Starting the Year Strong",
+    "description": "Witness a surge in hotel sales as January trends indicate a strong start for the hospitality industry.",
+    "category": "Sales Trends",
+    "tags": ["sales", "trends", "hospitality"]
+  },
+  {
+    "admin": "Hotel Management",
+    "date": "2023-02-18",
+    "comments": 2,
+    "title": "February Rental Specials: Unbeatable Deals Await",
+    "description": "Explore hot deals on hotel rentals this February, offering guests exceptional value and unforgettable experiences.",
+    "category": "Rental Offers",
+    "tags": ["rental", "specials", "deals"]
+  },
+  {
+    "admin": "Admin",
+    "date": "2023-03-25",
+    "comments": 1,
+    "title": "March Hotel Investments: Capitalizing on Opportunities",
+    "description": "Discover lucrative hotel investment opportunities amidst March madness, presenting investors with potential for significant returns.",
+    "category": "Investment Opportunities",
+    "tags": ["investment", "opportunities", "march madness"]
+  },
+  {
+    "admin": "Hotel Management",
+    "date": "2023-04-12",
+    "comments": 3,
+    "title": "April Hotel Trends: Embracing Spring's Bloom",
+    "description": "Experience the allure of April with blossoming hotel rental trends, offering travelers a diverse array of accommodations and experiences.",
+    "category": "Sales Trends",
+    "tags": ["hotel trends", "april", "spring"]
+  },
+  {
+    "admin": "Admin",
+    "date": "2023-05-20",
+    "comments": 0,
+    "title": "Exclusive May Residences: Luxury Living Awaits",
+    "description": "Keep an eye on the market in May for exclusive hotel residences for sale, providing buyers with opportunities for luxury living and investment.",
+    "category": "Luxury Living",
+    "tags": ["luxury", "residences", "may"]
+  },
+  {
+    "admin": "Hotel Management",
+    "date": "2023-06-08",
+    "comments": 2,
+    "title": "June Suite Demand: Summer's Luxurious Delight",
+    "description": "Discover June's jewel with high demand for hotel suites, offering guests premium comfort and luxury amidst the summer season.",
+    "category": "Rental Offers",
+    "tags": ["suite", "demand", "summer"]
+  },
+  {
+    "admin": "Admin",
+    "date": "2023-07-15",
+    "comments": 5,
+    "title": "July Rental Trends: Escaping to Paradise",
+    "description": "Escape to paradise with July's hot trends in hotel rentals, where guests can find the perfect retreat for relaxation and rejuvenation.",
+    "category": "Sales Trends",
+    "tags": ["rental trends", "july", "paradise"]
+  },
+  {
+    "admin": "Hotel Management",
+    "date": "2023-08-22",
+    "comments": 1,
+    "title": "August Property Investments: Seizing Growth Opportunities",
+    "description": "Take advantage of August opportunities by investing in hotel properties, capitalizing on the hospitality industry's growth and resilience.",
+    "category": "Investment Opportunities",
+    "tags": ["property", "investment", "august"]
+  },
+  {
+    "admin": "Admin",
+    "date": "2023-09-30",
+    "comments": 3,
+    "title": "September Luxury Suites: Unforgettable Stays Await",
+    "description": "Experience September splendor with luxury hotel suite specials, offering guests exclusive perks and amenities for an unforgettable stay.",
+    "category": "Rental Offers",
+    "tags": ["luxury suites", "september", "specials"]
+  },
+  {
+    "admin": "Hotel Management",
+    "date": "2023-10-14",
+    "comments": 0,
+    "title": "October Condo Residences: Sophistication Redefined",
+    "description": "Escape to an oasis of luxury living in October with hotel condo residences, providing residents with unparalleled comfort and sophistication.",
+    "category": "Luxury Living",
+    "tags": ["condo residences", "october", "luxury living"]
+  }
+]

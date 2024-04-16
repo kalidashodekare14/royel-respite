@@ -8,22 +8,22 @@ import aboutMan from '../../assets/aboutMission.webp'
 const AboutUs = () => {
     return (
         <div className='min-h-screen'>
-            <div className='aboutBackground bg-no-repeat bg-center bg-cover h-[60vh] text-white'>
-                <div className="flex flex-col justify-center items-center h-[60vh]">
+            <div className='aboutBackground bg-no-repeat bg-center bg-cover h-[70vh] text-white'>
+                <div className="flex flex-col justify-center items-center h-[70vh]">
                     <h1 data-aos="fade-down" data-aos-duration="1000" className='text-5xl'>About Us</h1>
                 </div>
             </div>
-            <div className='flex flex-col lg:flex-row justify-center items-center my-10 lg:mx-20 mx-5 lg:space-x-20'>
+            <div className='flex flex-col lg:flex-row justify-center items-center my-10 lg:mx-20 mx-5 lg:space-x-20 md:mx-20 md:mb-32'>
                 <div data-aos="fade-right" data-aos-delay="1000" className='lg:mb-20 mb-4'>
                     <img className='rounded-2xl' src={aboutMan} alt="" />
                 </div>
-                <div className='flex-1'>
+                <div className='flex-1 md:mt-20'>
                     <h1 data-aos="fade-left" data-aos-duration="1000" className='text-5xl font[500] font-popins mb-3'>Our Mission</h1>
                     <p  data-aos="fade-left" data-aos-delay="2000" className='text-[16px] font-popins leading-7 text-[#000000c2]'>Amidst the abundance of vintage Trips found in charity shops and car boot sales, we offer a unique experience by providing refurbished models. Today, replacement leatherette is readily available in a variety of colors, revitalizing these timeless pieces. Personally, I cherish my Trip, finding solace in its simplicity whenever I use it.</p>
                 </div>
             </div>
-            <div className='flex flex-col-reverse lg:flex-row justify-center items-center my-10 lg:mx-20 mx-5 space-x-5'>
-                <div className='flex-1 space-y-3'>
+            <div className='flex flex-col-reverse lg:flex-row justify-center items-center my-10 lg:mx-20 md:mx-20 mx-5 space-x-5'>
+                <div className='flex-1 space-y-3 md:mt-20'>
                     <h1 data-aos="fade-right" data-aos-duration="1000" className='text-4xl mb-6 font-[500]'>Questions</h1>
                     <div className="collapse collapse-arrow border-b">
                         <input type="radio" name="my-accordion-2" defaultChecked />

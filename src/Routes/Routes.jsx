@@ -2,7 +2,6 @@ import { createBrowserRouter } from "react-router-dom";
 import Root from "../Layout/Root/Root.jsx";
 import Home from "../Pages/Home/Home";
 import AboutUs from "../Pages/AboutUs/AboutUs.jsx";
-import Gellary from "../Pages/Gellary/Gellary.jsx";
 import Contact from "../Pages/Contact/Contact.jsx";
 import Details from "../Pages/Details/Details.jsx";
 import Login from "../Pages/Login/Login.jsx";
@@ -11,6 +10,7 @@ import PrivateRoutes from "../PrivateRoutes/PrivateRoutes.jsx";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage.jsx";
 import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile.jsx";
 import UserProfile from "../Pages/UserProfile/UserProfile.jsx";
+import Blog from "../Pages/Blog/Blog.jsx";
 
 
 const router = createBrowserRouter([
@@ -24,6 +24,7 @@ const router = createBrowserRouter([
                 element: <Home></Home>,
                 loader: () => fetch('../data.json')
             },
+
             {
                 path: '/about_us',
                 element: <AboutUs></AboutUs>
@@ -32,6 +33,7 @@ const router = createBrowserRouter([
                 path: '/contact',
                 element: <Contact></Contact>
             },
+
             {
                 path: '/update_profile',
                 element: <PrivateRoutes><UpdateProfile></UpdateProfile></PrivateRoutes>
@@ -52,7 +54,13 @@ const router = createBrowserRouter([
             {
                 path: '/signup',
                 element: <SingUp></SingUp>
-            }
+            },
+            {
+                path: '/blog',
+                element: <PrivateRoutes><Blog></Blog></PrivateRoutes>,
+                loader: ()=> fetch('blog.json')
+
+            },
 
 
         ]

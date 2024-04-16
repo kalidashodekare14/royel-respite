@@ -5,7 +5,8 @@ import { RouterProvider } from 'react-router-dom'
 import router from './Routes/Routes.jsx'
 import AuthProvider from './AuthProvider/AuthProvider.jsx'
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import 'aos/dist/aos.css'; 
+
 // ..
 AOS.init();
 

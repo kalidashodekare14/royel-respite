@@ -11,7 +11,7 @@ const UserProfile = () => {
     const { user } = useContext(AuthContext)
 
     return (
-        <div className='loginBackground bg-no-repeat bg-center bg-cover min-h-screen flex justify-center items-center'>
+        <div className='loginBackground bg-no-repeat bg-center bg-cover lg:min-h-screen h-[80vh] flex justify-center items-center'>
             <div data-aos="fade-down"  data-aos-duration="1000" className='card lg:w-2/5 lg:h-[70vh] border border-spacing-1 bg-[#000000b0] lg:space-y-3 lg:p-5'>
                 <div className='flex justify-center items-center mb-10'>
                     {
@@ -35,7 +35,7 @@ const UserProfile = () => {
                     <FaChevronRight data-aos="zoom-in"  data-aos-delay="2300" className='text-3xl text-white' />
                     <h1 data-aos="fade-right"  data-aos-delay="2400" className='text-2xl text-white'>Email: {user.email}</h1>
                 </div>
-                <div className='flex justify-end items-center'>
+                <div className='flex justify-end items-center mb-5 mr-5'>
                     <Link to="/update_profile">
                         <button data-aos="zoom-in"  data-aos-delay="2500" className='btn mt-10 border-0 text-white bg-[#0fb45f]'>
                             <FaEdit className='text-3xl' />
