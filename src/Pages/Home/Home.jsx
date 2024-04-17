@@ -26,9 +26,9 @@ const Home = () => {
                 {/* <Sliders></Sliders> */}
             </div>
             <div className="my-32 flex-col">
-                <div   className="my-20">
+                <div  className="my-20 space-y-3">
                     <h1 data-aos="fade-right"  data-aos-deration="1000" className="text-4xl text-center uppercase font-fontLato">Properties</h1>
-                    <p data-aos="fade-left"  data-aos-delay="1000" className="text-center text-[13px] tracking-[.30em]">Find Your Homes</p>
+                    <p data-aos="fade-left"  data-aos-delay="1000" className="text-center text-[#0fb469] text-[13px] tracking-[.30em]">Find Your Homes</p>
                 </div>
                 <div className=" font-roboto lg:mx-20 mx-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 flex-col">
                     {

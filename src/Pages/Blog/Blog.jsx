@@ -23,7 +23,13 @@ const Blog = () => {
                             <div className='' key={blog.id}>
 
                                 <div data-aos="zoom-in-right" data-aos-duration="1000" className="card lg:card-side flex-col bg-base-100 shadow-xl ">
-                                    <figure className='flex-1'><img className='h-full w-full' src={blog.image} alt="Movie" /></figure>
+                                    <figure className='flex-1 relative'>
+                                        <img className='h-full w-full' src={blog.image} alt="Movie" />
+                                        <div>
+                                        <span className='absolute left-3 top-3 p-3 bg-[#0fb469] text-white font-semibold'>{blog.date}</span>
+                                        </div>
+                                    </figure>
+
                                     <div className=" flex-1">
                                         <div className='space-y-5 p-3 lg:p-8'>
                                             <div className='flex items-center space-x-5'>
@@ -127,11 +133,11 @@ const Blog = () => {
                     <div data-aos="zoom-in" data-aos-duration="1000" className='bg-[#f8f8f8] mt-20 p-5 space-y-5'>
                         <h1 data-aos="zoom-in" data-aos-delay="1000" className="text-2xl">Tags</h1>
                         <div className='grid grid-cols-3 gap-5 text-[16px] '>
-                            <span data-aos="zoom-in-left" data-aos-delay="2000" className='border p-2 font-semibold text-[#6b6b6b]'>trends</span>
-                            <span data-aos="zoom-in-left" data-aos-delay="2200" className='border p-2 font-semibold text-[#6b6b6b]'>spring</span>
-                            <span data-aos="zoom-in-left" data-aos-delay="2300" className='border p-2 font-semibold text-[#6b6b6b]'>Offers</span>
-                            <span data-aos="zoom-in-left" data-aos-delay="2400" className='border p-2 font-semibold text-[#6b6b6b]'>paradise</span>
-                            <span data-aos="zoom-in-left" data-aos-delay="2500" className='border p-2 font-semibold text-[#6b6b6b]'>investment</span>
+                            <span data-aos="zoom-in-left" data-aos-delay="2000" className='border p-3 font-semibold text-[#6b6b6b]'>trends</span>
+                            <span data-aos="zoom-in-left" data-aos-delay="2200" className='border p-3 font-semibold text-[#6b6b6b]'>spring</span>
+                            <span data-aos="zoom-in-left" data-aos-delay="2300" className='border p-3 font-semibold text-[#6b6b6b]'>Offers</span>
+                            <span data-aos="zoom-in-left" data-aos-delay="2400" className='border p-3 font-semibold text-[#6b6b6b]'>paradise</span>
+                            <span data-aos="zoom-in-left" data-aos-delay="2500" className='border p-3 px-3 font-semibold text-[#6b6b6b]'>specials</span>
                         </div>
                     </div>
 
