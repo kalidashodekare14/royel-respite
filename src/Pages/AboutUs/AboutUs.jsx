@@ -17,7 +17,7 @@ const AboutUs = () => {
                 <div data-aos="fade-right" data-aos-delay="1000" className='lg:mb-20 mb-4'>
                     <img className='rounded-2xl' src={aboutMan} alt="" />
                 </div>
-                <div className='flex-1 md:mt-20'>
+                <div className='flex-1 '>
                     <h1 data-aos="fade-left" data-aos-duration="1000" className='text-5xl font[500] font-popins mb-3'>Our Mission</h1>
                     <p  data-aos="fade-left" data-aos-delay="2000" className='text-[16px] font-popins leading-7 text-[#000000c2]'>Amidst the abundance of vintage Trips found in charity shops and car boot sales, we offer a unique experience by providing refurbished models. Today, replacement leatherette is readily available in a variety of colors, revitalizing these timeless pieces. Personally, I cherish my Trip, finding solace in its simplicity whenever I use it.</p>
                 </div>

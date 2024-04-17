@@ -33,7 +33,7 @@ const Login = () => {
             .then(result => {
                 console.log(result.user)
                 navigate(location?.state ? location.state : '/')
-                navigate('/')
+                // navigate('/')
                 toast('You have successfully logged in')
             })
             .catch(error => {
