@@ -10,7 +10,7 @@ const Estate = ({ userData }) => {
         <div>
             <div data-aos="zoom-in" data-aos-duration="1000" className="bg-base-100 border flex-col ">
                 <div className='relative'>
-                    <img className=' w-full md:h-[40vh] lg:h-[40vh]' src={image_url} alt="Shoes" />
+                    <img className=' w-full  md:h-[40vh] lg:h-[40vh]' src={image_url} alt="Shoes" />
                     <span className='absolute top-2 left-2 bg-[#0fb469] px-3 py-2 text-white rounded font-roboto'>For {status}</span>
                 </div>
                 <div className="space-y-3 p-3">

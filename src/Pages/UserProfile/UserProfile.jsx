@@ -18,7 +18,7 @@ const UserProfile = () => {
                         user && <div>
                             {
                                 user.photoURL ? <div>
-                                    <img data-aos="fade-down"  data-aos-delay="1000" className='w-32 rounded-full' src={user.photoURL} alt="" />
+                                    <img  className='w-32 rounded-full' src={user.photoURL} alt="" />
                                 </div>
                                 : <img className='w-32 rounded-full' src={userNull} alt="" />
                             }
@@ -26,18 +26,18 @@ const UserProfile = () => {
                     }
                 </div>
                 <div className='flex items-center space-x-2'>
-                    <FaChevronRight data-aos="zoom-in"  data-aos-delay="2000" className='text-3xl text-white' />
-                    <h1 data-aos="fade-left"  data-aos-delay="2200" className='text-2xl text-white'>
+                    <FaChevronRight  className='text-3xl text-white' />
+                    <h1  className='text-2xl text-white'>
                         Name: {user.displayName}
                     </h1>
                 </div>
                 <div className='flex items-center space-x-2'>
-                    <FaChevronRight data-aos="zoom-in"  data-aos-delay="2300" className='text-3xl text-white' />
-                    <h1 data-aos="fade-right"  data-aos-delay="2400" className='text-2xl text-white'>Email: {user.email}</h1>
+                    <FaChevronRight  className='text-3xl text-white' />
+                    <h1  className='text-2xl text-white'>Email: {user.email}</h1>
                 </div>
                 <div className='flex justify-end items-center mb-5 mr-5'>
                     <Link to="/update_profile">
-                        <button data-aos="zoom-in"  data-aos-delay="2500" className='btn mt-10 border-0 text-white bg-[#0fb45f]'>
+                        <button  className='btn mt-10 border-0 text-white bg-[#0fb45f]'>
                             <FaEdit className='text-3xl' />
                         </button>
                     </Link>
