@@ -27,10 +27,10 @@ const UpdateProfile = () => {
                 </div>
                 <div className="px-3">
                     <form className='space-y-2 mb-5' onSubmit={handleUpdateProfile}>
-                        <p  className='text-[18px] text-white'>Name: {user.displayName}</p>
+                        <p  className='text-[18px] text-white'>Update Your Name</p>
                         <input  className='input input-bordered w-full' name='name' type="name" />
                         <br />
-                        <p  className='text-[18px] text-white'>Enter Your Photo Url</p>
+                        <p  className='text-[18px] text-white'>Update Your Photo Url</p>
                         <input  className='input input-bordered w-full' type="text" name='photoUrl' />
                         <br />
                         <div>
