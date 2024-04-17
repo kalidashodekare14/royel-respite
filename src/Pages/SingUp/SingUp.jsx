@@ -6,6 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
 import './SingUp.css'
+import { Helmet } from 'react-helmet-async';
 
 
 const SingUp = () => {
@@ -67,6 +68,9 @@ const SingUp = () => {
 
     return (
         <div className='singUpBackground bg-no-repeat bg-center bg-cover lg:min-h-screen h-[90vh] flex justify-center items-center'>
+           <Helmet>
+                <title>SingUp | Royal Respite</title>
+            </Helmet>
             <div data-aos="zoom-in" data-aos-duration="1000" className="lg:w-[50%] w-full mx-5 px-5 border  shadow-lg bg-[#000000c5]">
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm">
 

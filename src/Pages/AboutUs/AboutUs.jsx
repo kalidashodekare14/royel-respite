@@ -2,12 +2,16 @@ import React from 'react';
 import './AboutUs.css'
 import man from '../../assets/man.jpg'
 import aboutMan from '../../assets/aboutMission.webp'
+import { Helmet } from 'react-helmet-async';
 
 
 
 const AboutUs = () => {
     return (
         <div className='min-h-screen'>
+            <Helmet>
+                <title>About Us | Royal Respite</title>
+            </Helmet>
             <div className='aboutBackground bg-no-repeat bg-center bg-cover h-[70vh] text-white'>
                 <div className="flex flex-col justify-center items-center h-[70vh]">
                     <h1 data-aos="fade-down" data-aos-duration="1000" className='text-5xl'>About Us</h1>
@@ -19,7 +23,7 @@ const AboutUs = () => {
                 </div>
                 <div className='flex-1 '>
                     <h1 data-aos="fade-left" data-aos-duration="1000" className='text-5xl font[500] font-popins mb-3'>Our Mission</h1>
-                    <p  data-aos="fade-left" data-aos-delay="2000" className='text-[16px] font-popins leading-7 text-[#000000c2]'>Amidst the abundance of vintage Trips found in charity shops and car boot sales, we offer a unique experience by providing refurbished models. Today, replacement leatherette is readily available in a variety of colors, revitalizing these timeless pieces. Personally, I cherish my Trip, finding solace in its simplicity whenever I use it.</p>
+                    <p data-aos="fade-left" data-aos-delay="2000" className='text-[16px] font-popins leading-7 text-[#000000c2]'>Amidst the abundance of vintage Trips found in charity shops and car boot sales, we offer a unique experience by providing refurbished models. Today, replacement leatherette is readily available in a variety of colors, revitalizing these timeless pieces. Personally, I cherish my Trip, finding solace in its simplicity whenever I use it.</p>
                 </div>
             </div>
             <div className='flex flex-col-reverse lg:flex-row justify-center items-center my-10 lg:mx-20 md:mx-20 mx-5 space-x-5'>
@@ -59,7 +63,7 @@ const AboutUs = () => {
                 </div>
             </div>
             <div>
-                
+
             </div>
         </div>
     );

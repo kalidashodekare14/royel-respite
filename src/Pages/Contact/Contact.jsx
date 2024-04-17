@@ -6,12 +6,16 @@ import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet'
 import { IoHomeOutline } from "react-icons/io5";
 import { MdOutlineTabletAndroid } from "react-icons/md";
 import { MdEmail } from "react-icons/md";
+import { Helmet } from 'react-helmet-async';
 
 
 
 const Contact = () => {
     return (
         <div>
+             <Helmet>
+                <title>Contact | Royal Respite</title>
+            </Helmet>
             <div className='contactBackground bg-no-repeat bg-cover bg-center h-[70vh] flex flex-col justify-center items-center '>
                 <h1 data-aos="fade-down" data-aos-duration="1000" className='text-6xl text-white font-popins'>Contact</h1>
             </div>

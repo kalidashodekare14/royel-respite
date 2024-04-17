@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
 import './UpdateProfile.css'
+import { Helmet } from 'react-helmet-async';
 
 const UpdateProfile = () => {
 
@@ -16,6 +17,9 @@ const UpdateProfile = () => {
 
     return (
         <div className='updateProfile bg-no-repeat bg-cover bg-center min-h-screen flex justify-center items-center'>
+            <Helmet>
+                <title>Update Profile | Royal Respite</title>
+            </Helmet>
             <div data-aos="zoom-in" data-aos-duration="1000" className="lg:w-1/3 md:w-1/2 w-full mx-3 border border-spacing-1    shadow-xl bg-[#00000087]">
                 <h1  className='text-center lg:text-4xl text-2xl my-5 text-white'>Update Your Profile</h1>
                 <div className='flex justify-center'>

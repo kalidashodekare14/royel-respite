@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Estate from "../../Estate/Estate";
 import Slider from "../Slider/Slider";
 import { useLoaderData } from 'react-router-dom'
@@ -11,7 +12,9 @@ const Home = () => {
 
     return (
         <div className="relative">
-
+            <Helmet>
+                <title>Home | Royal Respite</title>
+            </Helmet>
             <div data-aos="zoom-in" data-aos-duration="1000"  className="absolute font-roboto z-10 top-52 md:left-[20%]  lg:left-[30%] bg-[#000000a4] rounded lg:w-[40%] p-5 text-center space-y-3">
                 <h1 data-aos="fade-right" data-aos-delay="1000"
                     className="text-5xl text-white">Urban Oasis Awaits</h1>
