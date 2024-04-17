@@ -9,7 +9,7 @@ import { Helmet } from 'react-helmet-async';
 
 const UserProfile = () => {
 
-    const { user } = useContext(AuthContext)
+    const { user, loader } = useContext(AuthContext)
 
     return (
         <div className='loginBackground bg-no-repeat bg-center bg-cover lg:min-h-screen h-[120vh] flex justify-center items-center'>
@@ -19,7 +19,7 @@ const UserProfile = () => {
             <div data-aos="fade-down"  data-aos-duration="1000" className='card lg:w-2/5 lg:h-[70vh] border border-spacing-1 bg-[#000000b0] lg:space-y-3 lg:p-5 mx-5 md:mt-20'>
                 <div className='flex justify-center items-center mb-10'>
                     {
-                        user && <div>
+                        user ? <div>
                             {
                                 user.photoURL ? <div>
                                     <img  className='w-32 rounded-full' src={user.photoURL} alt="" />
@@ -27,6 +27,7 @@ const UserProfile = () => {
                                 : <img className='w-32 rounded-full' src={userNull} alt="" />
                             }
                         </div>  
+                        : <span className="loading loading-spinner loading-lg"></span>
                     }
                 </div>
                 <div className='flex items-center space-x-2'>

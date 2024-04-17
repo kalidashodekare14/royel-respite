@@ -33,6 +33,7 @@ const AuthProvider = ({ children }) => {
         updateProfile(auth.currentUser, {
             displayName: name,
             photoURL: photoUrl
+            
         })
             .then(() => {
                 // console.log(result.user)
@@ -51,12 +52,13 @@ const AuthProvider = ({ children }) => {
             setUser(currentUser)
             console.log(currentUser)
             setLoader(false)
+            
         })
         return () => {
             unSubscribe()
         }
 
-    }, [])
+    }, [user])
 
 
     const userData = { user, loader, registerUser, loginUser, useSignOut, googleSingIn, gitHubSingIn, updateProfileChange}
