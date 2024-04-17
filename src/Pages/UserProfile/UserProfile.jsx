@@ -12,11 +12,11 @@ const UserProfile = () => {
     const { user } = useContext(AuthContext)
 
     return (
-        <div className='loginBackground bg-no-repeat bg-center bg-cover lg:min-h-screen h-[80vh] flex justify-center items-center'>
+        <div className='loginBackground bg-no-repeat bg-center bg-cover lg:min-h-screen h-[120vh] flex justify-center items-center'>
             <Helmet>
                 <title>User Profile | Royal Respite</title>
             </Helmet>
-            <div data-aos="fade-down"  data-aos-duration="1000" className='card lg:w-2/5 lg:h-[70vh] border border-spacing-1 bg-[#000000b0] lg:space-y-3 lg:p-5'>
+            <div data-aos="fade-down"  data-aos-duration="1000" className='card lg:w-2/5 lg:h-[70vh] border border-spacing-1 bg-[#000000b0] lg:space-y-3 lg:p-5 mx-5 md:mt-20'>
                 <div className='flex justify-center items-center mb-10'>
                     {
                         user && <div>

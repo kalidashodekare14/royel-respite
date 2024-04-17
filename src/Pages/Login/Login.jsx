@@ -73,7 +73,7 @@ const Login = () => {
 
 
     return (
-        <div className='relative logBackground bg-no-repeat bg-cover bg-center lg:min-h-screen h-[80vh] flex justify-center items-center'>
+        <div className='relative logBackground bg-no-repeat bg-cover bg-center lg:min-h-screen h-[120vh] flex justify-center items-center'>
             <Helmet>
                 <title>Login | Royal Respite</title>
             </Helmet>

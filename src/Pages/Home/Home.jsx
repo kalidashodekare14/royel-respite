@@ -15,7 +15,7 @@ const Home = () => {
             <Helmet>
                 <title>Home | Royal Respite</title>
             </Helmet>
-            <div data-aos="zoom-in" data-aos-duration="1000"  className="absolute font-roboto z-10 top-52 md:left-[20%]  lg:left-[30%] bg-[#000000a4] rounded lg:w-[40%] p-5 text-center space-y-3">
+            <div data-aos="zoom-in" data-aos-duration="1000"  className="absolute font-roboto z-10 top-52 md:left-[10%]  lg:left-[30%] bg-[#000000a4] rounded lg:w-[40%] p-5 text-center space-y-3">
                 <h1 data-aos="fade-right" data-aos-delay="1000"
                     className="text-5xl text-white">Urban Oasis Awaits</h1>
                 <p data-aos="fade-left" data-aos-delay="2000" className="text-[#fca311] tracking-[.25em]">Ultimate Destination for Exceptional Residential Experiences.</p>
@@ -30,7 +30,7 @@ const Home = () => {
                     <h1 data-aos="fade-right"  data-aos-deration="1000" className="text-4xl text-center uppercase font-fontLato">Properties</h1>
                     <p data-aos="fade-left"  data-aos-delay="1000" className="text-center text-[13px] tracking-[.30em]">Find Your Homes</p>
                 </div>
-                <div className=" font-roboto lg:mx-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 flex-col">
+                <div className=" font-roboto lg:mx-20 mx-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 flex-col">
                     {
                         estateData.map(userData => <Estate key={userData.id} userData={userData}></Estate>)
                     }

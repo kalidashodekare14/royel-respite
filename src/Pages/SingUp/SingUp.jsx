@@ -67,7 +67,7 @@ const SingUp = () => {
 
 
     return (
-        <div className='singUpBackground bg-no-repeat bg-center bg-cover lg:min-h-screen h-[90vh] flex justify-center items-center'>
+        <div className='singUpBackground bg-no-repeat bg-center bg-cover lg:min-h-screen h-[120vh] flex justify-center items-center'>
            <Helmet>
                 <title>SingUp | Royal Respite</title>
             </Helmet>
