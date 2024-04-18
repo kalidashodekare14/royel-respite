@@ -39,8 +39,8 @@ const Login = () => {
             })
             .catch(error => {
                 console.log(error.message)
-                setError('Your email is not registered, please register')
-                toast('Your email is not registered, please register')
+                setError('Your Email and password something wrong')
+                toast('Your Email and password something wrong')
             })
     }
 
@@ -122,7 +122,7 @@ const Login = () => {
                                 Sign in
                             </button>
                             {
-                                error && <span className='text-red-500'>Your Email and password something wrong</span>
+                                error && <span className='text-red-500'>{error}</span>
                             }
 
                         </div>
