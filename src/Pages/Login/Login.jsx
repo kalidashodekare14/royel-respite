@@ -35,12 +35,12 @@ const Login = () => {
                 console.log(result.user)
                 navigate(location?.state ? location.state : '/')
                 // navigate('/')
-                toast.error('You have successfully logged in')
+                toast.success('You have successfully logged in')
             })
             .catch(error => {
                 console.log(error.message)
                 setError('Your Email and password something wrong')
-                toast('Your Email and password something wrong')
+                toast.error('Your Email and password something wrong')
             })
     }
 
