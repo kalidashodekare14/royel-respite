@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
 import { FaEye } from "react-icons/fa";
 import { ToastContainer, toast } from 'react-toastify';
@@ -11,12 +11,13 @@ import { Helmet } from 'react-helmet-async';
 
 const SingUp = () => {
 
-    const { registerUser } = useContext(AuthContext)
+    const { registerUser, updateProfileChange } = useContext(AuthContext)
     const [passwordShow, setPasswordShow] = useState(true)
     const [passwordError, setPasswordError] = useState('')
     const [success, setSuccess] = useState('')
     const [error, setError,] = useState('')
-
+    const navigate = useNavigate()
+    const location = useLocation()
 
     const handleRegister = e => {
         e.preventDefault()
@@ -29,6 +30,8 @@ const SingUp = () => {
         setPasswordError('')
         setSuccess('')
         setError('')
+
+        
 
         if (password.length < 6) {
             setPasswordError('Password must be 6 Character')
@@ -50,6 +53,8 @@ const SingUp = () => {
         registerUser(email, password)
             .then(result => {
                 console.log(result.user)
+                updateProfileChange(name, photoUrl)
+                
                 setSuccess('Your Register Successfully')
                 toast("Your Register Successfully")
             })
@@ -61,6 +66,9 @@ const SingUp = () => {
 
 
     }
+
+    
+
 
 
 
