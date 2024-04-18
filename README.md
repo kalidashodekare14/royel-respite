@@ -32,3 +32,4 @@
 -  [React Toastify](https://fkhadra.github.io/react-toastify/installation/)
 -  [React Icons](https://react-icons.github.io/react-icons/)
 -  [React-Helmet-Async](https://www.npmjs.com/package/react-helmet-async)
+- [Firebase](https://firebase.google.com/)
