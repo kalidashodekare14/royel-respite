@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
 import { FaEye } from "react-icons/fa";
 import { ToastContainer, toast } from 'react-toastify';
-
+import { FaEyeSlash } from "react-icons/fa6";
 import 'react-toastify/dist/ReactToastify.css';
 import './SingUp.css'
 import { Helmet } from 'react-helmet-async';
@@ -68,13 +68,13 @@ const SingUp = () => {
 
     return (
         <div className='singUpBackground bg-no-repeat bg-center bg-cover lg:min-h-screen h-[120vh] flex justify-center items-center'>
-           <Helmet>
+            <Helmet>
                 <title>SingUp | Royal Respite</title>
             </Helmet>
             <div data-aos="zoom-in" data-aos-duration="1000" className="lg:w-[50%] w-full mx-5 px-5 border  shadow-lg bg-[#000000c5]">
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm">
 
-                    <h2  className="font-roboto mt-5 text-center text-2xl font-bold leading-9 tracking-tight text-white">
+                    <h2 className="font-roboto mt-5 text-center text-2xl font-bold leading-9 tracking-tight text-white">
                         Sing Up to your account
                     </h2>
                 </div>
@@ -86,45 +86,53 @@ const SingUp = () => {
                                 Full Name
                             </label>
                             <div className="mt-2">
-                                <input  name='name' type='text' required className="input input-bordered w-full"
+                                <input name='name' type='text' required className="input input-bordered w-full"
                                 />
 
                             </div>
                         </div>
                         <div>
-                            <label  htmlFor="email" className="block font-roboto text-sm font-medium leading-6 text-white">
+                            <label htmlFor="email" className="block font-roboto text-sm font-medium leading-6 text-white">
                                 Email address
                             </label>
-                            <div  className="mt-2">
+                            <div className="mt-2">
                                 <input name='email' type='email' required className="input input-bordered w-full"
                                 />
                             </div>
                         </div>
                         <div>
-                            <label  htmlFor="email" className=" block font-roboto text-sm font-medium leading-6 text-white">
+                            <label htmlFor="email" className=" block font-roboto text-sm font-medium leading-6 text-white">
                                 photo URL
                             </label>
                             <div className="mt-2">
-                                <input  name='photo' type='photo' required className="input input-bordered w-full"
+                                <input name='photo' type='photo' required className="input input-bordered w-full"
                                 />
                             </div>
                         </div>
 
                         <div>
                             <div className="flex items-center justify-between">
-                                <label  htmlFor="password" className="block font-roboto text-sm font-medium leading-6 text-white">
+                                <label htmlFor="password" className="block font-roboto text-sm font-medium leading-6 text-white">
                                     Password
                                 </label>
 
                             </div>
                             <div className="mt-2">
-                                <div  className='flex items-center input-bordered border rounded-xl px-2 bg-[white]'>
+                                <div className='flex items-center input-bordered border rounded-xl px-2 bg-[white]'>
                                     <input name='password' required type={passwordShow ? 'password' : 'text'}
                                         className="input  w-full"
                                     />
-                                    <div onClick={() => setPasswordShow(!passwordShow)} >
-                                        <FaEye className='text-[16px]' />
-                                    </div>
+                                    {
+                                        passwordShow ?
+                                            <div onClick={() => setPasswordShow(!passwordShow)} >
+                                                <FaEye className='text-[18px]' />
+                                            </div>
+                                            :
+                                            <div onClick={() => setPasswordShow(!passwordShow)} >
+                                                <FaEyeSlash className='text-[18px]' />
+                                            </div>
+                                    }
+
                                 </div>
                                 {
                                     passwordError && <span className='text-red-500'>{passwordError}</span>
@@ -134,7 +142,7 @@ const SingUp = () => {
 
                         <div>
                             <button
-                               
+
                                 type="submit"
                                 className="flex font-roboto w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                             >
@@ -149,7 +157,7 @@ const SingUp = () => {
                         </div>
                     </form>
 
-                    <p  className="mt-4 font-roboto mb-5 text-center text-sm text-gray-500">
+                    <p className="mt-4 font-roboto mb-5 text-center text-sm text-gray-500">
                         Already have an account? {' '}
                         <a href="#" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
                             <Link to="/signin">

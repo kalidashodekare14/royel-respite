@@ -8,7 +8,7 @@
 
 
 
-## Authors
+## Features
 
 - This website is made with Residential and here are some Residential hotels shown through cards.
 
@@ -19,6 +19,7 @@
 - The means to contact us are shown
 
 - If anyone logs in to the website, they can view their information and update that information. And if a user does not register then he has to register first.
+
 ##  npm package name:
 -  [React Router](https://reactrouter.com/en/main)
 -  [Tailwindcss](https://tailwindcss.com)
