@@ -35,7 +35,7 @@ const Login = () => {
                 console.log(result.user)
                 navigate(location?.state ? location.state : '/')
                 // navigate('/')
-                toast('You have successfully logged in')
+                toast.error('You have successfully logged in')
             })
             .catch(error => {
                 console.log(error.message)
